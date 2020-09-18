@@ -8,6 +8,7 @@ export const WelcomePage = () => {
         <div className="welcome-page">
             <HelloWorld />
             <Link to={'/docs'}>Guidelines and documentation</Link>
+            <Link to={'/meetup'}>Go to meetup</Link>
         </div>
     );
 }

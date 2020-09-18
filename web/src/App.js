@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import { WelcomePage } from '@pages/welcome';
 import { Docs } from '@pages/docs';
+import { Meetup } from '@pages/meetup';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Switch>
                 <Route exact path="/" component={WelcomePage}/>
                 <Route exact path="/docs" component={Docs}/>
+                <Route exact path="/meetup" component={Meetup}/>
                 <Redirect to="/"/>
             </Switch>
         </Router>
