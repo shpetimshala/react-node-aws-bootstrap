@@ -75,6 +75,7 @@ custom:
 
 functions:
   - ${file(./serverless/functions_blogs.yml)}
+  - ${file(./serverless/functions_articles.yml)}
   # FUNCTIONS_PLACEHOLDER
 
 resources:

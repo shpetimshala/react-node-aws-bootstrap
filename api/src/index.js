@@ -5,6 +5,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 
 import blogRoutes from '@routes/blog-routes';
+import articleRoutes from '@routes/article-routes';
 // ROUTE_IMPORT_PLACEHOLDER
 
 export const app = express();
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(bodyParser.json({ limit: '10mb', extended: true }));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/blogs', blogRoutes);
+app.use('/articles', articleRoutes);
 // ROUTE_USE_PLACEHOLDER
 
 // catch 404 and forward to error handler
